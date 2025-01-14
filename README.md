@@ -1,2 +1,3 @@
 # C-programming
-first repository
+repository for c programming
+added some files
