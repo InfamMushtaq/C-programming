@@ -1,16 +1,15 @@
 #include<stdio.h>
-int fac(int *n);
+int fac(int n);
 int main (){
-	int number = 3;
-	fac(&number);
-	printf("factorial of number is : %d",&number);
+	int number;
+	 printf("enter a number: ");
+	 scanf("%d",&number);
+	printf("factorial of number is : %d",  fac(number));
 	return 0;
 	
 }
-int fac(int *n){
-	int factorial;
-	if(*n==1||*n==0)
+int fac(int n){
+	if(n==1||n==0)
 	return 1;
-	*n=(*n)*(*n-1);
-	return *n;
+	return n*fac(n-1);
 }
